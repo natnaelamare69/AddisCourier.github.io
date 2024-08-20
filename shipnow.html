@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ship Now Form</title>
+  <link rel="stylesheet" href="style sheet/shipnow.css">
+  <script src="scripts/formvalidate.js"></script>
+</head>
+<body>
+  <div class="bg-img">
+  <header>
+    <nav class="header">
+        <div class="head_link">
+        <a href="index.html" class="logo_link">
+            <span class="icon_1">
+                <ion-icon name="cube-outline"></ion-icon>
+            </span>
+           Addis Courier
+        </a>
+        <div class="toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </div>
+        <ul class="menu">
+            
+            <li class="nav_items">
+                <a href="tracking.html" class="nav_links">
+                    Tracking
+                </a>
+            </li>
+            <li class="nav_items">
+                <a href="Support.html" class="nav_links">
+                  Support
+                </a>
+            </li>
+            <li class="nav_btn">
+                <a href="login.html" class="button">
+                    <span class="icon_2">
+                        <ion-icon name="person-circle-outline"></ion-icon>
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+  
+  <div class="form-container">
+    <div class="ship_main_head">
+      <h1>Start Shipping Now</h1>
+      <img src="resources/undraw_heavy_box_agqi.svg" alt="">
+      <div class="overlay">
+        <p>Our courier shipping page makes sending packages simple and efficient.  Track your shipments in real-time, calculate shipping costs, and choose from a variety of delivery options to suit your needs.  We're committed to providing reliable and affordable shipping solutions.</p>
+      </div>
+    </div>
+    <p class="form_head">Enter the Sender and Recipient Details in the form below</p>
+    <table>
+      <tr>
+        <th colspan="2">Sender Details</th>
+      </tr>
+      <tr>
+        <td>
+          <label for="from-name">Name:</label>
+          <input type="text" id="from-name" name="from-name" placeholder="(required)" required>
+        </td>
+        <td>
+          <label for="from-company">Company:</label>
+          <input type="text" id="from-company" name="from-company" placeholder="(optional)">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="from-country">Country/Location:</label>
+          <input type="text" id="from-country" name="from-country" placeholder="(required)" required>
+        </td>
+        <td>
+          <label for="from-address">Address:</label>
+          <input type="text" id="from-address" name="from-address" placeholder="(required)" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="from-phone">Phone:</label>
+          <input type="tel" id="from-phone" name="from-phone" placeholder="(required)" pattern="[0-9]{10}" required>
+        </td>
+        <td>
+          <label for="from-email">Email:</label>
+          <input type="email" id="from-email" name="from-email" placeholder="(required)" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="from-tax-id">Tax ID:</label>
+          <input type="text" id="from-tax-id" name="from-tax-id" placeholder="(required)" required>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th colspan="2">Recipient Details</th>
+      </tr>
+      <tr>
+        <td>
+          <label for="to-name">Name:</label>
+          <input type="text" id="to-name" name="to-name" placeholder="(required)" required>
+        </td>
+        <td>
+          <label for="to-company">Company:</label>
+          <input type="text" id="to-company" name="to-company" placeholder="(optional)">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="to-country">Country/Location:</label>
+          <input type="text" id="to-country" name="to-country" placeholder="(required)" required>
+        </td>
+        <td>
+          <label for="to-address">Address:</label>
+          <input type="text" id="to-address" name="to-address" placeholder="(required)" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="to-phone">Phone:</label>
+          <input type="tel" id="to-phone" name="to-phone" placeholder="(required)" pattern="[0-9]{10}" required>
+        </td>
+        <td>
+          <label for="to-email">Email:</label>
+          <input type="email" id="to-email" name="to-email" placeholder="(required)" required>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="to-tax-id">Tax ID:</label>
+          <input type="number" id="to-tax-id" name="to-tax-id" placeholder="(required)" required>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type ="submit" onclick="shipnowform()">Submit</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+  </div>
+  <footer>
+    <div class="footer_container">
+        <div class="footer_links">
+            <div class="footer_linkwrap">
+                <div class="footer_item">
+                    <h2>About Us</h2>
+                    <a href="/">
+                        <ion-icon name="pin"></ion-icon>
+                         Bole,Addis Ababa, Ethiopia </a>
+                    <a href="/">
+                        <ion-icon name="call"></ion-icon> 
+                        +251 123 456  78</a>
+                    <a href="/"><ion-icon name="mail"></ion-icon> 
+                        info@AddisCourier.com</a>
+                </div>
+                <div class="footer_item">
+                    <h2>Working Hours</h2>
+                    <a href="/">Business Hours</a>
+                    <a href="/">Monday-Friday</a>
+                    <a href="/">09:00 am - 07:00 pm</a>
+                    <a href="/">Saturdays and Sundays closed</a>
+                </div>
+            </div>
+            <div class="footer_linkwrap">
+                <div class="footer_item">
+                    <h2>Our News</h2>
+                    <a href="/">NewsLetter</a>
+                    <a href="/">stay updated with the latest news</a>
+                    <a href="/">promotions and updates from AddisCourier</a>
+                    <a href="/">Sign up for our newsletter to never miss out on daily news about us</a>
+                </div>
+             
+            </div>
+        </div>
+        <div class="socials_media">
+            <div class="social_wrap">
+                <div class="footer_logo">
+                    <a href="/" class="logo_link">
+                        <span class="icon_1">
+                            <ion-icon name="cube-outline"></ion-icon>
+                        </span>
+                       Addis Courier
+                    </a>
+                </div>
+                <p class="web_right">Addis Courier 2024. All rights reserved</p>
+                <div class="social_icon">
+                    <a href="/" class="social_icon_link" target="">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                    <a href="/" class="social_icon_link" target="">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a href="/" class="social_icon_link" target="">
+                        <ion-icon name="logo-snapchat"></ion-icon>
+                    </a>
+                    <a href="/" class="social_icon_link" target="">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="/" class="social_icon_link" target="">
+                        <ion-icon name="logo-youtube"></ion-icon>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script src="scripts/addis.js"></script>
+</body>
+</html>

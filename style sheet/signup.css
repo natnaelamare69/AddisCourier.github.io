@@ -1,0 +1,354 @@
+/*header*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Kumbh-Sans', sans-serif;
+}
+.bg-img{
+    background-image: url('../resources/bodyback\ \(2\).png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: inherit;
+    background-size: cover;
+    
+}
+.header{
+  background: #6b28da;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.head_link{
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  z-index: 1;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 50px;
+  background: #6b28da;
+}
+.logo_link{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  color: white;
+  transition: 0.3s;
+}
+.logo_link:hover{
+  color: #2828da;
+}
+.icon_1{
+  margin-right: 10px;
+  font-size: 40px;
+  padding-top: 10px;
+}
+.menu{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  padding-right: 200px;
+  font-size: 25px;
+  font-weight: 600
+}
+.nav_items{
+  height: 80px;
+}
+.nav_links{
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  padding: 50px;
+  height: 100%;
+  transition: 0.5s;
+}
+.nav_links:hover{
+  color: #2828da;
+}
+.icon_2{
+ font-size: 50px;
+ color: white;
+ transition: 0.5s;
+ display: flex;
+ padding-top: 15px;
+ padding-left: 10px; 
+}
+.icon_2:hover{
+  color: #2828da;
+}
+@media screen and (max-width: 960px) {
+  .head_link{
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      padding: 0;
+      padding-top: 20px;
+  }
+  .menu{
+      display: grid;
+      grid-template-columns: auto;
+      margin: 0;
+      width: 100%;
+      position: absolute;
+      top: -1000px;
+      opacity: 0;
+      transition: all 0.5s ease;
+      height: 50vh;
+      z-index: -1;
+      background: #6b28da;
+  
+      padding-left: 200px;
+  }
+  .menu.active{
+      background: #6b28da;
+      top: 100%;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 99;
+      height: 50vh;
+      font-size: 1.6rem;
+  }
+  .logo_link{
+      padding-left: 20px;
+  }
+  .toggle .bar{
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      transition: all 0.3s ease-in-out;
+      background: white;
+  }
+  .nav_items{
+      width: 100%;
+  }
+  .nav_links{
+      text-align: center;
+      padding: 2rem;
+      width: 100%;
+      display: table;
+  }
+  #mobile-menu{
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      transform: translate(5%, 20%);
+  }
+  .nav_btn{
+      padding-bottom: 2rem;
+  }
+  .icon_2{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 80%;
+      height: 80px;
+      margin: 0;
+      padding-left: 60px;
+  }
+  .toggle .bar{
+      display: block;
+      cursor: pointer;
+  }
+  .toggle{
+      padding-top: 20px;
+  }
+  #mobile-menu.is-active .bar:nth-child(2){
+      opacity: 0;
+     }
+     #mobile-menu.is-active .bar:nth-child(1){
+      transform: translateY(8px) rotate(45deg);
+     }
+     #mobile-menu.is-active .bar:nth-child(1){
+      transform: translateY(-8px) rotate(-45deg);
+     }
+}
+/**/
+/**/
+
+    .sign-up-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      padding-top: 100px;
+    }
+
+    .sign-up-container {
+      background-color: white;
+      padding: 40px;
+      border: 1px solid;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 40%;
+    }
+
+    .sign-up-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .sign-up-form .form-field {
+      margin-bottom: 20px;
+    }
+
+    .sign-up-form .form-label {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .sign-up-form .form-input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+
+    .sign-up-form .gender-options {
+      display: flex;
+      gap: 20px;
+    }
+
+    .sign-up-form .sign-up-button {
+      background-color:#6b28da;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+
+    .sign-up-form .sign-up-button:hover {
+      background-color:#6b28da;
+    }
+    .login-link {
+        text-align: center;
+        margin-top: 20px;
+      }
+      
+      .login-link a {
+        color:#6b28da;
+        text-decoration: none;
+      }
+      
+      .login-link a:hover {
+        text-decoration: underline;
+      }
+      @media screen and (max-width: 960px) {
+        .sign-up-wrappe{
+          width: 60%;
+        }
+        }
+        @media screen and (max-width: 480px) {
+        .form-container{
+          width: 100%;
+        }
+        }
+/**/
+
+
+footer{
+  padding-top: 80px;
+}
+.footer_container{
+  background-color: #6b28da;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.footer_links{
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  justify-content: center;
+}
+.footer_linkwrap{
+  display: flex;
+}
+.footer_item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 50px;
+  text-align: left;
+  width: 200px;
+  box-sizing: border-box;
+
+}
+.footer_item h2{
+ margin-bottom: 16px; 
+}
+.footer_item > h2{
+  color: white;
+}
+.footer_item a{
+  color: white;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+.social_icon_link{
+ color: white;
+ font-size: 24px;
+}
+.socials_media{
+  max-width: 1000px;
+  width: 100%;
+}
+.social_wrap{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1000%;
+  margin: 40px auto 0 auto;
+}
+.social_icon{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
+}
+.web_right{
+  color: white;
+}
+@media screen and (max-width: 820px) {
+  .footer_links{
+      padding-top: 2rem;
+  }
+  .web_right{
+      margin-bottom: 2rem;
+  }
+  .footer_linkwrap{
+      flex-direction: column;
+  }
+  .social_wrap{
+      flex-direction: column;
+  }
+}
+@media screen and (max-width: 480px) {
+  .footer_item{
+      margin: 0;
+      padding: 10px;
+      width: 100%;
+  }
+}
